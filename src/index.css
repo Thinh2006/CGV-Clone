@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Antd Modal */
+.ant-modal-content {
+ padding: 0 !important;
+}
+
+.ant-modal-close {
+  top: -10px !important;
+  right: -10px !important;
+}
+
+/* .ant-modal-body {
+  background-color: ;
+} */
