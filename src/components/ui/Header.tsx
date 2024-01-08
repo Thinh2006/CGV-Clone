@@ -95,7 +95,7 @@ export const Header = () => {
                                 alt=""
                             />
                             <a onClick={() => navigate(PATH.notFound)}>
-                                TIN MỚI VÀ ƯU ĐÃI fd
+                                TIN MỚI VÀ ƯU ĐÃI
                             </a>
                         </div>
                         <div className="flex gap-2 items-center cursor-pointer">
