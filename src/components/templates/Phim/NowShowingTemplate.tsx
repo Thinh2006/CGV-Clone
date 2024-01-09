@@ -137,15 +137,17 @@ export const NowShowingTemplate = () => {
                                                 height: 270,
                                                 borderRadius: 7,
                                             }}
+                                            onClick={() => {
+                                                dispatch(
+                                                    getMovieDetailThunk(
+                                                        movie.maPhim
+                                                    )
+                                                );
+                                                navigate(`/${movie.tenPhim}`);
+                                            }}
                                         />
                                     }
                                     className="!my-20 !bg-transparent"
-                                    onClick={() => {
-                                        dispatch(
-                                            getMovieDetailThunk(movie.maPhim)
-                                        );
-                                        navigate(`/${movie.tenPhim}`);
-                                    }}
                                 >
                                     <Card.Meta
                                         title={movie.tenPhim}
