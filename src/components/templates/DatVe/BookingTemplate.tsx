@@ -98,7 +98,7 @@ export const BookingTemplate = () => {
                     </div>
                     <div className="seats mt-[35px] mb-10">
                         <img
-                            src="/public/images/bg-screen.png"
+                            src="/images/bg-screen.png"
                             className="w-full"
                         />
                         <div className="seats-list">

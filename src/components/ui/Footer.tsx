@@ -83,7 +83,7 @@ export const Footer = () => {
                                     target="_blank"
                                 >
                                     <img
-                                        src="/public/images/logo-facebookpng-32204.png"
+                                        src="/images/logo-facebookpng-32204.png"
                                         alt=""
                                         className="h-[35px]"
                                     />
@@ -93,7 +93,7 @@ export const Footer = () => {
                                     target="_blank"
                                 >
                                     <img
-                                        src="/public/images/youtube-logo-png-2082.png"
+                                        src="/images/youtube-logo-png-2082.png"
                                         alt=""
                                         className="h-[37px]"
                                     />
@@ -103,7 +103,7 @@ export const Footer = () => {
                                     target="_blank"
                                 >
                                     <img
-                                        src="/public/images/logo-instagram-2441.png"
+                                        src="/images/logo-instagram-2441.png"
                                         alt=""
                                         className="h-[37px]"
                                     />
@@ -113,7 +113,7 @@ export const Footer = () => {
                                     target="_blank"
                                 >
                                     <img
-                                        src="/public/images/zalo_logo.png"
+                                        src="/images/zalo_logo.png"
                                         alt=""
                                         className="h-[37px]"
                                     />
@@ -145,7 +145,7 @@ export const Footer = () => {
                         <div className="container flex">
                             <div className="cjcgv-logo">
                                 <img
-                                    src="/public/images/CI_logo_press_20220328_cgv_W-removebg-preview.png"
+                                    src="/images/CI_logo_press_20220328_cgv_W-removebg-preview.png"
                                     alt=""
                                     className="w-[150px] h-[150px]"
                                 />
@@ -196,7 +196,7 @@ export const Footer = () => {
                                 target="_blank"
                             >
                                 <img
-                                    src="/public/images/logo-facebookpng-32204.png"
+                                    src="/images/logo-facebookpng-32204.png"
                                     alt=""
                                     className="h-[35px]"
                                 />
@@ -206,7 +206,7 @@ export const Footer = () => {
                                 target="_blank"
                             >
                                 <img
-                                    src="/public/images/youtube-logo-png-2082.png"
+                                    src="/images/youtube-logo-png-2082.png"
                                     alt=""
                                     className="h-[37px]"
                                 />
@@ -216,7 +216,7 @@ export const Footer = () => {
                                 target="_blank"
                             >
                                 <img
-                                    src="/public/images/logo-instagram-2441.png"
+                                    src="/images/logo-instagram-2441.png"
                                     alt=""
                                     className="h-[37px]"
                                 />
@@ -226,7 +226,7 @@ export const Footer = () => {
                                 target="_blank"
                             >
                                 <img
-                                    src="/public/images/zalo_logo.png"
+                                    src="/images/zalo_logo.png"
                                     alt=""
                                     className="h-[37px]"
                                 />
@@ -257,7 +257,7 @@ export const Footer = () => {
                     <div className="text-center mb-5">
                         <div className="flex justify-center">
                             <img
-                                src="/public/images/CI_logo_press_20220328_cgv_W-removebg-preview.png"
+                                src="/images/CI_logo_press_20220328_cgv_W-removebg-preview.png"
                                 alt=""
                                 className="w-[150px] h-[120px]"
                             />

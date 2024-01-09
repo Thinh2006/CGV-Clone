@@ -21,7 +21,7 @@ export const NotFoundTemplate = () => {
                     </Button>
                 </div>
                 <div>
-                    <img className="image" src="/public/images/notFound.jpeg" />
+                    <img className="image" src="/images/notFound.jpeg" />
                 </div>
             </div>
         </div>
