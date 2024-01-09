@@ -6,7 +6,6 @@ export const TransactionHistoryTemplate = () => {
     const {
         userByToken: { thongTinDatVe },
     } = useAuth();
-    console.log("thongTinDatVe", thongTinDatVe);
 
     return (
         <HistoryContainer>
