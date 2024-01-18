@@ -70,6 +70,8 @@ export const BookingTemplate = () => {
         }
     };
 
+    if (isBookingFetching) return <Loading />;
+
     if (!bookingInfo) return;
     const {
         thongTinPhim: {
@@ -83,8 +85,6 @@ export const BookingTemplate = () => {
         danhSachGhe,
     } = bookingInfo;
 
-    if (isBookingFetching) return <Loading />;
-
     return (
         <BookingContainer>
             <div>
@@ -97,10 +97,7 @@ export const BookingTemplate = () => {
                         <p>{`${ngayChieu} ${gioChieu}`}</p>
                     </div>
                     <div className="seats mt-[35px] mb-10">
-                        <img
-                            src="/images/bg-screen.png"
-                            className="w-full"
-                        />
+                        <img src="/images/bg-screen.png" className="w-full" />
                         <div className="seats-list">
                             {danhSachGhe?.map((ghe) => (
                                 <a

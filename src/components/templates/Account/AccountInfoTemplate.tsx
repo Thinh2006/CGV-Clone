@@ -8,7 +8,6 @@ export const AccountInfoTemplate = () => {
     const { user } = useAuth();
     const navigate = useNavigate();
 
-
     return (
         <InfoContainer>
             <div className="info text-[13px]">

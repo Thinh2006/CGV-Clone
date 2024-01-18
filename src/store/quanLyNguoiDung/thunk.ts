@@ -9,7 +9,7 @@ export const loginThunk = createAsyncThunk(
         try {
             const data = await quanLyNguoiDungServices.login(payload);
 
-            await sleep(2000);
+            await sleep();
 
             return data.data.content;
         } catch (error) {
@@ -23,6 +23,8 @@ export const getUserByTokenThunk = createAsyncThunk(
     async (_, { rejectWithValue }) => {
         try {
             const token = getAccessToken();
+            await sleep(5000)
+
             if (token) {
                 const data = await quanLyNguoiDungServices.getUserByToken();
                 return data.data.content;

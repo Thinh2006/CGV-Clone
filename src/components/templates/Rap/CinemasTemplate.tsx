@@ -1,3 +1,4 @@
+import { Loading } from "components";
 import { useAuth } from "hooks";
 import { useEffect, useState } from "react";
 import { useAppDispatch } from "store";
@@ -5,7 +6,7 @@ import { getComlexListThunk } from "store/quanLyRap";
 import styled from "styled-components";
 
 export const CinemasTemplate = () => {
-    const { cinemaComplexList } = useAuth();
+    const { cinemaComplexList, isCinemasFetching } = useAuth();
     const [complex, setComplex] = useState(null);
 
     const dispatch = useAppDispatch();
@@ -13,13 +14,17 @@ export const CinemasTemplate = () => {
         dispatch(getComlexListThunk());
     }, [dispatch]);
 
+    if (isCinemasFetching) return <Loading />;
+
     return (
         <CinemaContainer>
             <div>
                 <div className="container !my-7 mx-auto">
                     <div className="top"></div>
                     <div className="mid">
-                        <h1 className="lg:text-[48px] text-3xl">CGV CINEMAS IN SAIGON</h1>
+                        <h1 className="lg:text-[48px] text-3xl">
+                            CGV CINEMAS IN SAIGON
+                        </h1>
                         <div>
                             <ul className="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 text-white py-20 border-y-2 border-[#727171]">
                                 {cinemaComplexList?.map((complex) => (

@@ -1,5 +1,6 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { quanLyRapServices } from "services";
+import { sleep } from "utils";
 
 export const getComlexListThunk = createAsyncThunk(
     "quanLyRap/getCinemaComlexList",
@@ -8,6 +9,7 @@ export const getComlexListThunk = createAsyncThunk(
             const data = await quanLyRapServices.getCinemaComlexList(
                 "?maHeThongRap=CGV"
             );
+            await sleep(1000);
             return data.data.content;
         } catch (error) {
             rejectWithValue(error);

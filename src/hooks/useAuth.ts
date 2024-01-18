@@ -10,7 +10,7 @@ export const useAuth = () => {
         (state: RootState) => state.quanLyPhim
     );
 
-    const { cinemaComplexList, movieShowTime } = useSelector(
+    const { cinemaComplexList, movieShowTime, isCinemasFetching } = useSelector(
         (state: RootState) => state.quanLyRap
     );
 
@@ -33,5 +33,6 @@ export const useAuth = () => {
         checkedList,
         movieDetail,
         isFetchingMovieDetail,
+        isCinemasFetching,
     };
 };

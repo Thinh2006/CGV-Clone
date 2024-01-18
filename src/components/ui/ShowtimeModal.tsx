@@ -42,7 +42,7 @@ export const ShowtimeModal = ({maPhim, modal, setModal}:modalProps) => {
                                 <h3 className="font-bold">{item.tenCumRap}</h3>
                                 {item.lichChieuPhim.map((lichChieu) => (
                                     <a
-                                        className="p-8 border-gray-300 border-2 hover:border-red-300 mt-16 inline-block !text-black text-center"
+                                        className="p-8 mr-10 border-gray-300 border-2 hover:border-red-300 mt-16 inline-block !text-black text-center"
                                         onClick={() =>
                                             navigate(
                                                 `/booking/${lichChieu.maLichChieu}`

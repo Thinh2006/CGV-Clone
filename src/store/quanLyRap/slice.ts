@@ -5,25 +5,34 @@ import { getComlexListThunk, getMovieShowTimeThunk } from "./thunk";
 type cinemaInitialState = {
     cinemaComplexList?: CinemaComplex[];
     movieShowTime?: MovieShowtime;
+    isCinemasFetching?: boolean;
 };
 
 const initialState: cinemaInitialState = {
     cinemaComplexList: undefined,
     movieShowTime: undefined,
+    isCinemasFetching: false,
 };
 
 const quanLyRapSlice = createSlice({
     name: "quanLyRap",
     initialState,
-    reducers:{},
+    reducers: {},
     extraReducers: (builder) => {
         builder
             .addCase(getComlexListThunk.fulfilled, (state, { payload }) => {
                 state.cinemaComplexList = payload;
+                state.isCinemasFetching = false;
+            })
+            .addCase(getComlexListThunk.rejected, (state) => {
+                state.isCinemasFetching = false;
+            })
+            .addCase(getComlexListThunk.pending, (state) => {
+                state.isCinemasFetching = true;
             })
             .addCase(getMovieShowTimeThunk.fulfilled, (state, { payload }) => {
                 state.movieShowTime = payload;
-            })
+            });
     },
 });
 
